@@ -518,8 +518,8 @@ C:\Users\vieir\all-C#\quizupenem\QuizUpEnem\obj\Debug\net8.0\QuizUpEnem.genrunti
 C:\Users\vieir\all-C#\quizupenem\QuizUpEnem\obj\Debug\net8.0\ref\QuizUpEnem.dll
 C:\Users\vieir\all-C#\quizupenem\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\vieir\all-C#\quizupenem\bin\Debug\net8.0\appsettings.json
-C:\Users\vieir\all-C#\quizupenem\bin\Debug\net8.0\app.db
 C:\Users\vieir\all-C#\quizupenem\bin\Debug\net8.0\QuizUpEnem.staticwebassets.runtime.json
+C:\Users\vieir\all-C#\quizupenem\bin\Debug\net8.0\app.db
 C:\Users\vieir\all-C#\quizupenem\bin\Debug\net8.0\QuizUpEnem.exe
 C:\Users\vieir\all-C#\quizupenem\bin\Debug\net8.0\QuizUpEnem.deps.json
 C:\Users\vieir\all-C#\quizupenem\bin\Debug\net8.0\QuizUpEnem.runtimeconfig.json

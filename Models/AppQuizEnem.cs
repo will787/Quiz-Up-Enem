@@ -14,7 +14,7 @@ namespace QuizUpEnem.Models
         [DisplayName("Materia")]
         [Required(ErrorMessage = "Campo Obrigatório")]
         public string Materia { get; set; }
-        //[DisplayName("Exercicios Criado em: ")]
+        [DisplayName("Exercicios Criado em: ")]
         public DateTime CreatedAt {get; set;} = DateTime.Now;
         public DateTime LastUpdateFinished { get; set; } = DateTime.Now;
         public string User {get; set;}

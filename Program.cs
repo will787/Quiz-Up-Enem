@@ -4,7 +4,7 @@ using QuizUpEnem.Data;
 using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<ApplcationDbContext>(options =>
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("ApplcationDbContext") ?? throw new InvalidOperationException("Connection string 'ApplcationDbContext' not found.")));
 
 // Add services to the container.

@@ -5,15 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using QuizUpEnem.Data;
 using QuizUpEnem.Models;
 
-namespace QuizUpEnem
+namespace MyQuizUpEnem.Controllers
 {
     public class AppQuizEnemController : Controller
     {
-        private readonly ApplcationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public AppQuizEnemController(ApplcationDbContext context)
+        public AppQuizEnemController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -21,7 +22,7 @@ namespace QuizUpEnem
         // GET: AppQuizEnem
         public async Task<IActionResult> Index()
         {
-            return View(await _context.AppQuizEnem.ToListAsync());
+            return View(await _context.AppQuizEnems.ToListAsync());
         }
 
         // GET: AppQuizEnem/Details/5
@@ -32,7 +33,7 @@ namespace QuizUpEnem
                 return NotFound();
             }
 
-            var appQuizEnem = await _context.AppQuizEnem
+            var appQuizEnem = await _context.AppQuizEnems
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (appQuizEnem == null)
             {
@@ -72,7 +73,7 @@ namespace QuizUpEnem
                 return NotFound();
             }
 
-            var appQuizEnem = await _context.AppQuizEnem.FindAsync(id);
+            var appQuizEnem = await _context.AppQuizEnems.FindAsync(id);
             if (appQuizEnem == null)
             {
                 return NotFound();
@@ -123,7 +124,7 @@ namespace QuizUpEnem
                 return NotFound();
             }
 
-            var appQuizEnem = await _context.AppQuizEnem
+            var appQuizEnem = await _context.AppQuizEnems
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (appQuizEnem == null)
             {
@@ -138,10 +139,10 @@ namespace QuizUpEnem
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var appQuizEnem = await _context.AppQuizEnem.FindAsync(id);
+            var appQuizEnem = await _context.AppQuizEnems.FindAsync(id);
             if (appQuizEnem != null)
             {
-                _context.AppQuizEnem.Remove(appQuizEnem);
+                _context.AppQuizEnems.Remove(appQuizEnem);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +151,7 @@ namespace QuizUpEnem
 
         private bool AppQuizEnemExists(int id)
         {
-            return _context.AppQuizEnem.Any(e => e.Id == id);
+            return _context.AppQuizEnems.Any(e => e.Id == id);
         }
     }
 }
