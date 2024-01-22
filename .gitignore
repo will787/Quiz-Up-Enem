@@ -1,0 +1,5 @@
+bin
+appsetings.json
+appsetings.Development.json
+quizUpEnem.csproj
+quizUpEnem.sln
