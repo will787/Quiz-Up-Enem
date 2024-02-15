@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuizUpEnem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83fe6d17d0a549c12d7cdcd054d73dbaf70fe8cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuizUpEnem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuizUpEnem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
